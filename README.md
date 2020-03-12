@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### To do list
 
 - [x] initialize project
-- [ ] create login and register components
+- [x] create login and register components
 - [ ] create Dashboard with charts
 - [ ] create web crawler
 - [ ] connect web crawler with dashboard
