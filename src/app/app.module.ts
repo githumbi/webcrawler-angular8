@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AlertComponent } from './_components';
 import { ChartComponent } from './chart/chart.component';
 
 
@@ -33,6 +34,7 @@ import { ChartComponent } from './chart/chart.component';
         HomeComponent,
         LoginComponent,
         RegisterComponent,
+        AlertComponent,
         ChartComponent
     ],
     providers: [
