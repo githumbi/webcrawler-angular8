@@ -1,9 +1,14 @@
 <!-- navigation -->
 <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+  <a class="navbar-brand" href="#">Web-crawler</a>
   <div class="navbar-nav">
       <a class="nav-item nav-link" routerLink="/">Home</a>
-      <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      <a class="nav-item nav-link" >about Us</a>
+      <a class="nav-item nav-link" >Contact</a>
+      <button class="btn btn-outline-danger my-2 my-sm-0" (click)="logout()">Logout</button>
+     
   </div>
+
 </nav>
 
 <!-- main content container-->
