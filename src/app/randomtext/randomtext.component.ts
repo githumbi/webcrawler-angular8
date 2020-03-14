@@ -9,10 +9,13 @@ export class RandomtextComponent implements OnInit {
 
  
   constructor() { 
-    var r = Math.random().toString(36).substring(7);
-    
+ 
   }
 
+  randomText(){
+    const r = Math.random().toString(36).substring(7);
+    return r;
+  }
   ngOnInit(): void {
   }
 
