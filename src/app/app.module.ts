@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ChartsModule } from 'ng2-charts';
 
 
+
+
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_components';
 import { ChartComponent } from './chart/chart.component';
+import { RandomtextComponent } from './randomtext/randomtext.component';
 
 
 
@@ -35,7 +38,8 @@ import { ChartComponent } from './chart/chart.component';
         LoginComponent,
         RegisterComponent,
         AlertComponent,
-        ChartComponent
+        ChartComponent,
+        RandomtextComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
