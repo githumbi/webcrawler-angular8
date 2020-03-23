@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_components';
 import { ChartComponent } from './chart/chart.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -35,7 +36,8 @@ import { ChartComponent } from './chart/chart.component';
         LoginComponent,
         RegisterComponent,
         AlertComponent,
-        ChartComponent
+        ChartComponent,
+        AboutComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
