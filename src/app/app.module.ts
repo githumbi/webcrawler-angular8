@@ -19,6 +19,7 @@ import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_components';
 import { ChartComponent } from './chart/chart.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -37,7 +38,8 @@ import { AboutComponent } from './about/about.component';
         RegisterComponent,
         AlertComponent,
         ChartComponent,
-        AboutComponent
+        AboutComponent,
+        ContactComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
