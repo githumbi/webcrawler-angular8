@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 // chart module
 import { ChartsModule } from 'ng2-charts';
 
+// formModule
+import { FormsModule} from '@angular/forms';
 
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
@@ -29,7 +31,8 @@ import { ContactComponent } from './contact/contact.component';
         ReactiveFormsModule,
         HttpClientModule,
         AppRoutingModule,
-        ChartsModule
+        ChartsModule,
+        FormsModule
     ],
     declarations: [
         AppComponent,
