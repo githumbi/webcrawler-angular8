@@ -1,50 +1,60 @@
 <div class="row justify-content-center">
   <h3 class="card-title">
-    Doughnut Chart Representing scale of each Programing Language in <b>year 2020</b> 
+    Doughnut Chart Representing scale of each Programing Language in
+    <b>year 2020</b>
   </h3>
   <div class="col-12">
     <div class="card">
       <app-chart></app-chart>
-      <!-- <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-      </div> -->
-    </div>
-  </div></div>
-  <div class="container">
-    <h5 class="card-title">Links been Checked</h5>
-    <div class="list-group">
-      <button
-        *ngFor="let link of links; let i = index"
-        type="button"
-        class="list-group-item list-group-item-action"
-      >
-        {{ i }} {{ link }}
-      </button>
     </div>
   </div>
+</div>
+<div class="container">
+  <h5 class="card-title">Links been Checkedby web Crawler</h5>
+  <div class="list-group">
+    <button *ngFor="let link of links; let i = index" type="button" class="list-group-item list-group-item-action">
+      {{ i }} {{ link }}
+    </button>
+  </div>
+</div>
 
-  <div class="container">
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mx-auto">
-            <!-- CUSTOM BLOCKQUOTE -->
-            <blockquote
-              class="blockquote blockquote-custom bg-white p-5 shadow rounded"
-            >
-              <div class="blockquote-custom-icon bg-info shadow-sm">
-                <i class="fa fa-quote-left text-white"></i>
-              </div>
-              <p class="mb-0 mt-2 font-italic">
-                "Every great innovation or accomplishment was once an idea which
-                the originator/inventor chose to pursue passionately and it came
-                to fullfilment."
-              </p>
-            </blockquote>
-            <!-- END -->
-          </div>
+
+<a href="home.component.html" class="btn btn-primary float" role="button">Refresh Page</a>
+
+<div class="container">
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <!-- CUSTOM BLOCKQUOTE -->
+          <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+            <div class="blockquote-custom-icon bg-info shadow-sm">
+              <i class="fa fa-quote-left text-white"></i>
+            </div>
+            <p class="mb-0 mt-2 font-italic">
+              "Every great innovation or accomplishment was once an idea which
+              the originator/inventor chose to pursue passionately and it came
+              to fullfilment."
+            </p>
+          </blockquote>
+          <!-- END -->
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 
+
+
+<script>
+   $(window).scroll(function() {
+    var winScrollTop = $(window).scrollTop();
+    var winHeight = $(window).height();
+    var floaterHeight = $('#floater').outerHeight(true);
+    //true so the function takes margins into account
+    var fromBottom = 20;
+
+    var top = winScrollTop + winHeight - floaterHeight - fromBottom;
+    $('#floater').css({'top': top + 'px'});
+})
+</script>

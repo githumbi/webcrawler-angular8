@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 //connect python webcrawler here
 export class ChartComponent implements OnInit {
   public doughnutChartLabels = ['python', 'Javascript', 'Java', 'Ruby'];
-  public doughnutChartData = [120, 150, 180, 90];
+  public doughnutChartData = [180, 150, 180, 30];
   public doughnutChartType = 'doughnut';
   constructor() { }
  

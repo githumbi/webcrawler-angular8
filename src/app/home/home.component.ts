@@ -3,18 +3,21 @@ import { Component, OnInit } from '@angular/core';
 
 import { UserService, AuthenticationService } from '../_services';
 
-@Component({ templateUrl: 'home.component.html' })
+@Component({ templateUrl: 'home.component.html',
+styleUrls: ['./home.component.scss']
+ })
 export class HomeComponent implements OnInit {
     currentUser: any;
     users = [];
 
     constructor(
+        
         private authenticationService: AuthenticationService,
         private userService: UserService
     ) {
         this.currentUser = this.authenticationService.currentUserValue;
     }
-// put website links here links here
+    // put website links here links here
     public links = [
         "https://www.freecodecamp.org/",
         "https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=40328&murl=https%3A%2F%2Fwww.coursera.org%2F",
@@ -23,7 +26,7 @@ export class HomeComponent implements OnInit {
         "http://codecademy.com/"
     ]
     ngOnInit() {
-  
+
     }
 
 
