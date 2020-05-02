@@ -5,19 +5,20 @@
   </h3>
   <div class="col-12">
     <div class="card">
+      <!--chart component here -->
       <app-chart></app-chart>
     </div>
   </div>
 </div>
+
 <div class="container">
-  <h5 class="card-title">Links been Checkedby web Crawler</h5>
+  <h5 class="card-title">Links been Checked by web Crawler</h5>
   <div class="list-group">
     <button *ngFor="let link of links; let i = index" type="button" class="list-group-item list-group-item-action">
       {{ i }} {{ link }}
     </button>
   </div>
 </div>
-
 
 <a href="home.component.html" class="btn btn-primary float" role="button">Refresh Page</a>
 
@@ -26,7 +27,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mx-auto">
-          <!-- CUSTOM BLOCKQUOTE -->
+          <!--CUSTOM BLOCKQUOTE-->
           <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
             <div class="blockquote-custom-icon bg-info shadow-sm">
               <i class="fa fa-quote-left text-white"></i>
@@ -44,17 +45,15 @@
   </section>
 </div>
 
-
-
 <script>
-   $(window).scroll(function() {
+  $(window).scroll(function () {
     var winScrollTop = $(window).scrollTop();
     var winHeight = $(window).height();
-    var floaterHeight = $('#floater').outerHeight(true);
+    var floaterHeight = $("#floater").outerHeight(true);
     //true so the function takes margins into account
     var fromBottom = 20;
 
     var top = winScrollTop + winHeight - floaterHeight - fromBottom;
-    $('#floater').css({'top': top + 'px'});
-})
+    $("#floater").css({ top: top + "px" });
+  });
 </script>
