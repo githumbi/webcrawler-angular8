@@ -7,13 +7,18 @@
 </section>
 
 <div class="card text-center">
-  
-  <div class="card-body">
-    
-    <p class="card-text">Phone number: +254719681843</p>
-    <p class="card-text">Email: cirkevmathew@gmail.com</p>
-   
-  </div>
-  
+
+  <table>
+    <tr>
+      <th>title</th>
+      <th>data</th>
+
+    </tr>
+    <tr *ngFor="let mydata of data[0]">
+      <td>{{mydata.title}}</td>
+      <td>{{mydata.data}}</td>
+    </tr>
+    </table>
+
 </div>
 

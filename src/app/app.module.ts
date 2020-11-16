@@ -14,6 +14,7 @@ import { ChartsModule } from 'ng2-charts';
 import { FormsModule} from '@angular/forms';
 
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -32,7 +33,8 @@ import { ContactComponent } from './contact/contact.component';
         HttpClientModule,
         AppRoutingModule,
         ChartsModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
     declarations: [
         AppComponent,
